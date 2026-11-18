@@ -1,4 +1,4 @@
-const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || 'http://localhost:5205').replace(/\/$/, '');
+const API_BASE_URL = (import.meta.env?.VITE_API_BASE_URL || 'http://localhost:5205').replace(/\/$/, '');
 
 async function readJson(response) {
   if (!response.ok) {
