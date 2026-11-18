@@ -1,12 +1,22 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 
-export default function useDebounce(value, delay = 400) {
-  const [debouncedValue, setDebouncedValue] = useState(value);
+export default function useDebounce(callback, delay = 400) {
+  const timer = useRef(null);
 
-  useEffect(() => {
-    const timer = window.setTimeout(() => setDebouncedValue(value), delay);
-    return () => window.clearTimeout(timer);
-  }, [value, delay]);
+  const cancel = useCallback(() => {
+    if (timer.current !== null) window.clearTimeout(timer.current);
+    timer.current = null;
+  }, []);
 
-  return debouncedValue;
+  const schedule = useCallback((...args) => {
+    cancel();
+    timer.current = window.setTimeout(() => {
+      timer.current = null;
+      callback(...args);
+    }, delay);
+  }, [callback, cancel, delay]);
+
+  useEffect(() => cancel, [cancel]);
+
+  return { schedule, cancel };
 }
