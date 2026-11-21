@@ -36,3 +36,21 @@ C:\Users\markr\OneDrive\ドキュメント\ITP Elective 3 Luces\Car Show Registr
 C:\Users\markr\OneDrive\ドキュメント\ITP Elective 3 Luces\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Infrastructure\obj\Debug\net10.0\refint\Infrastructure.dll
 C:\Users\markr\OneDrive\ドキュメント\ITP Elective 3 Luces\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Infrastructure\obj\Debug\net10.0\Infrastructure.pdb
 C:\Users\markr\OneDrive\ドキュメント\ITP Elective 3 Luces\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Infrastructure\obj\Debug\net10.0\ref\Infrastructure.dll
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Infrastructure\bin\Debug\net10.0\Infrastructure.deps.json
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Infrastructure\bin\Debug\net10.0\Infrastructure.dll
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Infrastructure\bin\Debug\net10.0\Infrastructure.pdb
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Infrastructure\bin\Debug\net10.0\Application.dll
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Infrastructure\bin\Debug\net10.0\Domain.dll
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Infrastructure\bin\Debug\net10.0\Application.pdb
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Infrastructure\bin\Debug\net10.0\Domain.pdb
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Infrastructure\obj\Debug\net10.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Infrastructure\obj\Debug\net10.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Infrastructure\obj\Debug\net10.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Infrastructure\obj\Debug\net10.0\Infrastructure.AssemblyInfo.cs
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Infrastructure\obj\Debug\net10.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Infrastructure\obj\Debug\net10.0\Infrastructure.sourcelink.json
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Infrastructure\obj\Debug\net10.0\Infrastr.15EFFBFE.Up2Date
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Infrastructure\obj\Debug\net10.0\Infrastructure.dll
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Infrastructure\obj\Debug\net10.0\refint\Infrastructure.dll
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Infrastructure\obj\Debug\net10.0\Infrastructure.pdb
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Infrastructure\obj\Debug\net10.0\ref\Infrastructure.dll
