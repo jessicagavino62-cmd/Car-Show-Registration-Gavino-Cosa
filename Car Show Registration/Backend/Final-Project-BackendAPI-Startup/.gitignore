@@ -1,0 +1,17 @@
+# React frontend
+Frontend/node_modules/
+Frontend/dist/
+Frontend/.env.local
+Frontend/.env.*.local
+
+# C# backend
+**/bin/
+**/obj/
+.vs/
+**/*.db
+**/appsettings.Development.json
+
+# IDE and operating system files
+.vscode/
+.DS_Store
+Thumbs.db
