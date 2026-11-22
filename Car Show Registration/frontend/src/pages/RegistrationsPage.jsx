@@ -1,10 +1,11 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { AlertCircle, RefreshCw } from 'lucide-react';
-import { getRegistrations, getSummary } from '../api/sample-data.js';
+import { AlertCircle, RefreshCw, UserPlus } from 'lucide-react';
+import { createRegistration, getRegistrations, getSummary } from '../api/sample-data.js';
 import DashboardHeader from '../components/DashboardHeader.jsx';
 import KpiCards from '../components/KpiCards.jsx';
 import Pagination from '../components/Pagination.jsx';
 import RegistrationFilters from '../components/RegistrationFilters.jsx';
+import RegistrationFormModal from '../components/RegistrationFormModal.jsx';
 import RegistrationTable from '../components/RegistrationTable.jsx';
 import useDebounce from '../hooks/useDebounce.js';
 
@@ -33,6 +34,7 @@ export default function RegistrationsPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [retryCount, setRetryCount] = useState(0);
+  const [registrationModalOpen, setRegistrationModalOpen] = useState(false);
   const commitSearch = useCallback((value) => {
     setAppliedSearch(value);
     setPage(1);
@@ -84,6 +86,13 @@ export default function RegistrationsPage() {
     setPage(1);
   };
 
+  const submitRegistration = (details) => {
+    const registration = createRegistration(details);
+    clearFilters();
+    setRetryCount((count) => count + 1);
+    return registration;
+  };
+
   const changeSearch = (value) => {
     setSearch(value);
     scheduleSearch(value);
@@ -110,12 +119,18 @@ export default function RegistrationsPage() {
     <div className="min-h-screen bg-slate-50 text-slate-900">
       <DashboardHeader />
       <main className="mx-auto max-w-[1440px] px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
-        <div className="mb-6 flex flex-col gap-1 sm:mb-7">
-          <div className="flex flex-wrap items-center gap-2">
-            <h1 className="text-xl font-semibold tracking-tight text-slate-900 sm:text-2xl">Registration overview</h1>
-            <span className="rounded-full border border-blue-100 bg-blue-50 px-2.5 py-1 text-xs font-medium text-blue-700">3-day event</span>
+        <div className="mb-6 flex flex-col gap-4 sm:mb-7 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex flex-col gap-1">
+            <div className="flex flex-wrap items-center gap-2">
+              <h1 className="text-xl font-semibold tracking-tight text-slate-900 sm:text-2xl">Registration overview</h1>
+              <span className="rounded-full border border-red-100 bg-red-50 px-2.5 py-1 text-xs font-medium text-red-700">3-day event</span>
+            </div>
+            <p className="text-sm text-slate-500">Monitor participant registrations and payments for Car Show 2027.</p>
           </div>
-          <p className="text-sm text-slate-500">Monitor participant registrations and payments for Car Show 2027.</p>
+          <button className="inline-flex shrink-0 items-center justify-center gap-2 rounded-lg bg-red-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-300 focus:ring-offset-2" type="button" onClick={() => setRegistrationModalOpen(true)}>
+            <UserPlus aria-hidden="true" size={17} />
+            Register
+          </button>
         </div>
 
         <KpiCards summary={summary} />
@@ -126,9 +141,6 @@ export default function RegistrationsPage() {
               <h2 id="registrations-title" className="text-base font-semibold text-slate-900">Registrations</h2>
               <p className="mt-0.5 text-xs text-slate-500">Browse participant and vehicle details</p>
             </div>
-            <span className="inline-flex w-fit items-center gap-2 rounded-full bg-slate-50 px-2.5 py-1 text-xs font-medium text-slate-600">
-              <span className="size-1.5 rounded-full bg-emerald-500" aria-hidden="true" /> Sample data
-            </span>
           </div>
 
           <RegistrationFilters
@@ -147,7 +159,7 @@ export default function RegistrationsPage() {
               <span className="flex size-12 items-center justify-center rounded-full bg-red-50 text-red-600"><AlertCircle aria-hidden="true" size={22} /></span>
               <h3 className="mt-4 font-semibold text-slate-900">Cannot reach the API.</h3>
               <p className="mt-1 max-w-sm text-sm text-slate-500">{error}</p>
-              <button className="mt-4 inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2" type="button" onClick={() => setRetryCount((count) => count + 1)}>
+              <button className="mt-4 inline-flex items-center gap-2 rounded-lg bg-red-600 px-4 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-300 focus:ring-offset-2" type="button" onClick={() => setRetryCount((count) => count + 1)}>
                 <RefreshCw aria-hidden="true" size={15} /> Try again
               </button>
             </div>
@@ -159,7 +171,7 @@ export default function RegistrationsPage() {
                   <span className="flex size-12 items-center justify-center rounded-full bg-slate-100 text-slate-500"><AlertCircle aria-hidden="true" size={21} /></span>
                   <h3 className="mt-4 font-semibold text-slate-900">No registrations match your filters.</h3>
                   <p className="mt-1 text-sm text-slate-500">Try changing your search or registration filters.</p>
-                  {hasFilters && <button className="mt-4 rounded-lg px-3 py-2 text-sm font-semibold text-blue-700 transition hover:bg-blue-50" type="button" onClick={clearFilters}>Clear filters</button>}
+                  {hasFilters && <button className="mt-4 rounded-lg px-3 py-2 text-sm font-semibold text-red-700 transition hover:bg-red-50" type="button" onClick={clearFilters}>Clear filters</button>}
                 </div>
               ) : (
                 <RegistrationTable registrations={registrations} loading={loading} />
@@ -177,8 +189,11 @@ export default function RegistrationsPage() {
           )}
         </section>
 
-        <p className="mt-5 text-center text-xs text-slate-400">AutoVista Events <span className="mx-1">•</span> Car Show 2027 <span className="mx-1">•</span> Sorsogon City Coliseum</p>
+        <footer className="mt-5 text-center text-xs text-slate-400">
+          Developed by: Mark Russell Cosa <span className="mx-1">•</span> © Copyright 2027. All Rights Reserved.
+        </footer>
       </main>
+      {registrationModalOpen && <RegistrationFormModal onClose={() => setRegistrationModalOpen(false)} onSubmit={submitRegistration} />}
     </div>
   );
 }
