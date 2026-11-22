@@ -30,7 +30,7 @@ export default function RegistrationTable({ registrations, loading = false }) {
             </tr>
           )) : registrations.map((registration) => (
             <tr className="transition-colors hover:bg-slate-50/80" key={registration.id}>
-              <td className="whitespace-nowrap px-5 py-4 font-semibold text-blue-700">{registration.registrationNumber}</td>
+              <td className="whitespace-nowrap px-5 py-4 font-semibold text-red-700">{registration.registrationNumber}</td>
               <td className="whitespace-nowrap px-5 py-4 text-slate-600">{registrationDate.format(new Date(registration.registrationDate))}</td>
               <td className="px-5 py-4">
                 <div className="flex min-w-40 items-center gap-3">

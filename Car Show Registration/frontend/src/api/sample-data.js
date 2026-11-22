@@ -55,6 +55,31 @@ export const sampleRegistrations = registrationSeeds.map((seed, index) => {
   };
 });
 
+export function createRegistration(details) {
+  const sequence = sampleRegistrations.length + 1;
+  const registrationFee = { Exhibitor: 1500, Competitor: 2500, VIP: 3900 }[details.registrationType];
+  const registration = {
+    id: `car-show-2027-${String(sequence).padStart(4, '0')}`,
+    registrationNumber: `CS27-${String(sequence).padStart(4, '0')}`,
+    registrationDate: new Date().toISOString(),
+    participantName: details.participantName.trim(),
+    contactNumber: details.contactNumber.trim(),
+    email: details.email.trim(),
+    address: details.address.trim(),
+    carMakeModel: details.carMakeModel.trim(),
+    plateNumber: details.plateNumber.trim(),
+    registrationType: details.registrationType,
+    paymentMethod: details.paymentMethod,
+    status: 'Pending',
+    registrationFee,
+    amountPaid: 0,
+    paymentStatus: 'Unpaid',
+  };
+
+  sampleRegistrations.unshift(registration);
+  return registration;
+}
+
 const wait = (duration = 120) => new Promise((resolve) => setTimeout(resolve, duration));
 
 export async function getRegistrations({ participantName = '', type = '', status = '', page = 1, pageSize = 10 } = {}) {
