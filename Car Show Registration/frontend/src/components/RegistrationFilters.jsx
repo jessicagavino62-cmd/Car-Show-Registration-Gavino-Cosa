@@ -1,6 +1,6 @@
 import { Search, SlidersHorizontal, X } from 'lucide-react';
 
-const selectClass = 'h-10 w-full rounded-lg border border-slate-200 bg-white px-3 text-sm text-slate-700 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100 disabled:cursor-not-allowed disabled:bg-slate-50 sm:w-auto';
+const selectClass = 'h-10 w-full rounded-lg border border-slate-200 bg-white px-3 text-sm text-slate-700 outline-none transition focus:border-red-500 focus:ring-2 focus:ring-red-100 disabled:cursor-not-allowed disabled:bg-slate-50 sm:w-auto';
 
 export default function RegistrationFilters({ search, onSearchChange, type, onTypeChange, status, onStatusChange, onClear, disabled = false }) {
   const hasFilters = search || type !== 'All' || status !== 'All';
@@ -11,7 +11,7 @@ export default function RegistrationFilters({ search, onSearchChange, type, onTy
         <Search aria-hidden="true" className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" size={17} />
         <span className="sr-only">Search participant name</span>
         <input
-          className="h-10 w-full rounded-lg border border-slate-200 bg-white pl-9 pr-3 text-sm text-slate-900 outline-none placeholder:text-slate-400 transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100 disabled:cursor-not-allowed disabled:bg-slate-50"
+          className="h-10 w-full rounded-lg border border-slate-200 bg-white pl-9 pr-3 text-sm text-slate-900 outline-none placeholder:text-slate-400 transition focus:border-red-500 focus:ring-2 focus:ring-red-100 disabled:cursor-not-allowed disabled:bg-slate-50"
           type="search"
           placeholder="Search participant name..."
           value={search}

@@ -15,7 +15,7 @@ export default function Pagination({ page, totalPages, pageSize, totalCount, onP
         </button>
         {pages.map((pageNumber) => (
           <button
-            className={`${buttonBase} ${pageNumber === page ? 'border-blue-600 bg-blue-600 font-semibold text-white shadow-sm' : 'border-transparent bg-white text-slate-600 hover:border-slate-200 hover:bg-slate-50'}`}
+            className={`${buttonBase} ${pageNumber === page ? 'border-red-600 bg-red-600 font-semibold text-white shadow-sm' : 'border-transparent bg-white text-slate-600 hover:border-slate-200 hover:bg-slate-50'}`}
             type="button"
             key={pageNumber}
             aria-label={`Page ${pageNumber}`}
@@ -35,7 +35,7 @@ export default function Pagination({ page, totalPages, pageSize, totalCount, onP
         <span>Showing <span className="font-medium text-slate-700">{start}–{end}</span> of <span className="font-medium text-slate-700">{totalCount}</span></span>
         <label className="flex items-center gap-2">
           <span>Rows per page</span>
-          <select className="h-9 rounded-lg border border-slate-200 bg-white px-2 text-sm text-slate-700 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100 disabled:cursor-not-allowed" value={pageSize} onChange={(event) => onPageSizeChange(Number(event.target.value))} disabled={disabled}>
+          <select className="h-9 rounded-lg border border-slate-200 bg-white px-2 text-sm text-slate-700 outline-none focus:border-red-500 focus:ring-2 focus:ring-red-100 disabled:cursor-not-allowed" value={pageSize} onChange={(event) => onPageSizeChange(Number(event.target.value))} disabled={disabled}>
             {[5, 10, 20].map((size) => <option value={size} key={size}>{size}</option>)}
           </select>
         </label>
