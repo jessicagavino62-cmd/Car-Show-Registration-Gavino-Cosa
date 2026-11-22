@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Api\\Api.csproj": {}
+    "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Api\\Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Api\\Api.csproj": {
+    "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Api\\Api.csproj",
+        "projectUniqueName": "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Api\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Api\\Api.csproj",
-        "packagesPath": "C:\\Users\\markr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Api\\obj\\",
+        "projectPath": "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Api\\Api.csproj",
+        "packagesPath": "C:\\Users\\jessi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\markr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jessi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -33,11 +34,11 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Domain\\Domain.csproj"
+              "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -52,7 +53,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "11.0.100"
       },
       "frameworks": {
         "net10.0": {
@@ -62,6 +63,22 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[10.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[11.0.0, )"
             },
             "Scalar.AspNetCore": {
               "target": "Package",
@@ -87,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\11.0.100/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
@@ -505,20 +522,20 @@
         }
       }
     },
-    "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Application\\Application.csproj": {
+    "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\markr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Application\\obj\\",
+        "projectPath": "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\jessi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\markr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jessi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -527,6 +544,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -534,8 +552,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Domain\\Domain.csproj"
+              "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Domain\\Domain.csproj"
               }
             }
           }
@@ -550,7 +568,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "11.0.100"
       },
       "frameworks": {
         "net10.0": {
@@ -586,7 +604,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\11.0.100/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -864,20 +882,20 @@
         }
       }
     },
-    "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Domain\\Domain.csproj": {
+    "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\markr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\jessi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\markr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jessi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -886,6 +904,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -905,7 +924,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "11.0.100"
       },
       "frameworks": {
         "net10.0": {
@@ -927,7 +946,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\11.0.100/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1205,20 +1224,20 @@
         }
       }
     },
-    "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\markr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\jessi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\markr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jessi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1227,6 +1246,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -1234,11 +1254,11 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Application\\Application.csproj"
+              "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Application\\Application.csproj"
               },
-              "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\markr\\OneDrive\\ドキュメント\\ITP Elective 3 Luces\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Domain\\Domain.csproj"
+              "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\jessi\\Downloads\\Car Show Registration\\Car Show Registration\\Backend\\Final-Project-BackendAPI-Startup\\Domain\\Domain.csproj"
               }
             }
           }
@@ -1253,7 +1273,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "11.0.100"
       },
       "frameworks": {
         "net10.0": {
@@ -1265,6 +1285,10 @@
               "version": "[10.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
               "version": "[10.0.0, )"
             }
@@ -1285,7 +1309,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\11.0.100/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

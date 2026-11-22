@@ -24,3 +24,16 @@ C:\Users\markr\OneDrive\ドキュメント\ITP Elective 3 Luces\Car Show Registr
 C:\Users\markr\OneDrive\ドキュメント\ITP Elective 3 Luces\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Domain\obj\Debug\net10.0\refint\Domain.dll
 C:\Users\markr\OneDrive\ドキュメント\ITP Elective 3 Luces\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Domain\obj\Debug\net10.0\Domain.pdb
 C:\Users\markr\OneDrive\ドキュメント\ITP Elective 3 Luces\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Domain\obj\Debug\net10.0\ref\Domain.dll
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Domain\bin\Debug\net10.0\Domain.deps.json
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Domain\bin\Debug\net10.0\Domain.dll
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Domain\bin\Debug\net10.0\Domain.pdb
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Domain\obj\Debug\net10.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Domain\obj\Debug\net10.0\Domain.AssemblyInfoInputs.cache
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Domain\obj\Debug\net10.0\Domain.AssemblyInfo.cs
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Domain\obj\Debug\net10.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Domain\obj\Debug\net10.0\Domain.sourcelink.json
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Domain\obj\Debug\net10.0\Domain.dll
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Domain\obj\Debug\net10.0\refint\Domain.dll
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Domain\obj\Debug\net10.0\Domain.pdb
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Domain\obj\Debug\net10.0\ref\Domain.dll
+C:\Users\jessi\Downloads\Car Show Registration\Car Show Registration\Backend\Final-Project-BackendAPI-Startup\Domain\obj\Debug\net10.0\Domain.csproj.Up2Date

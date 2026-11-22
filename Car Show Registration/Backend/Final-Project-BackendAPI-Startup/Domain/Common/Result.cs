@@ -10,15 +10,18 @@ public class Result<T>
     {
         IsSuccess = true;
         Value = value;
+        Error = null;
     }
 
     private Result(Error error)
     {
         IsSuccess = false;
+        Value = default;
         Error = error;
     }
 
     public static Result<T> Success(T value) => new(value);
+
     public static Result<T> Failure(Error error) => new(error);
 }
 
@@ -34,11 +37,15 @@ public class Result
     }
 
     public static Result Success() => new(true, null);
+
     public static Result Failure(Error error) => new(false, error);
 }
 
 public record Error(string Code, string Message)
 {
-    public static Error NotFound(string code, string message) => new(code, message);
-    public static Error Validation(string code, string message) => new(code, message);
+    public static Error NotFound(string code, string message)
+        => new(code, message);
+
+    public static Error Validation(string code, string message)
+        => new(code, message);
 }

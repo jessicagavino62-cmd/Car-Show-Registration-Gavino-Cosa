@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using Application.Abstractions.Data;
 using Domain.Entities;
 using Domain.Enums;
@@ -72,91 +74,90 @@ public sealed class AppDbContext : DbContext, IAppDbContext
         );
     }
 
-
     private static Registration[] CreateSeedData()
     {
         var names = new[]
         {
-        "Jessica Gavino",
-        "Rafael Sanchez",
-        "Mica Juadines",
-        "Wnhelrose Dequilla",
-        "April Anne Don",
-        "Aivy Bolano",
-        "Mary Rose Soriano",
-        "Angel Gillego",
-        "Venmar Fuellas",
-        "Francis Garais",
-        "Wendel Duque",
-        "Angelica Greago",
-        "Joshua Rivera",
-        "Camille Gonzales",
-        "Christian Aquino",
-        "Gabriel Navarro",
-        "Isabella Cruz",
-        "Rafael Domingo",
-        "Trisha Morales",
-        "Kevin Salazar",
-        "Bianca Herrera",
-        "Adrian Mercado",
-        "Jasmine Lopez",
-        "Nathaniel Perez",
-        "Erika Fernandez"
-    };
+            "Jessica Gavino",
+            "Rafael Sanchez",
+            "Mica Juadines",
+            "Wnhelrose Dequilla",
+            "April Anne Don",
+            "Aivy Bolano",
+            "Mary Rose Soriano",
+            "Angel Gillego",
+            "Venmar Fuellas",
+            "Francis Garais",
+            "Wendel Duque",
+            "Angelica Greago",
+            "Joshua Rivera",
+            "Camille Gonzales",
+            "Christian Aquino",
+            "Gabriel Navarro",
+            "Isabella Cruz",
+            "Rafael Domingo",
+            "Trisha Morales",
+            "Kevin Salazar",
+            "Bianca Herrera",
+            "Adrian Mercado",
+            "Jasmine Lopez",
+            "Nathaniel Perez",
+            "Erika Fernandez"
+        };
 
         var cars = new[]
         {
-        "Toyota Supra MK5",
-        "Honda Civic Type R",
-        "Nissan GT-R R35",
-        "Mitsubishi Lancer Evolution X",
-        "Subaru WRX STI",
-        "Mazda RX-7",
-        "Toyota GR86",
-        "Honda Civic RS",
-        "Ford Mustang GT",
-        "BMW M3",
-        "Toyota 86",
-        "Nissan Silvia S15",
-        "Honda Integra Type R",
-        "Mazda MX-5 Miata",
-        "Chevrolet Camaro SS",
-        "Porsche 911 Carrera",
-        "Toyota GR Yaris",
-        "Mitsubishi Lancer EX",
-        "Hyundai Genesis Coupe",
-        "Nissan 370Z",
-        "BMW M4",
-        "Honda S2000",
-        "Toyota GR Supra",
-        "Subaru BRZ",
-        "Ford Focus RS"
-    };
+            "Toyota Supra MK5",
+            "Honda Civic Type R",
+            "Nissan GT-R R35",
+            "Mitsubishi Lancer Evolution X",
+            "Subaru WRX STI",
+            "Mazda RX-7",
+            "Toyota GR86",
+            "Honda Civic RS",
+            "Ford Mustang GT",
+            "BMW M3",
+            "Toyota 86",
+            "Nissan Silvia S15",
+            "Honda Integra Type R",
+            "Mazda MX-5 Miata",
+            "Chevrolet Camaro SS",
+            "Porsche 911 Carrera",
+            "Toyota GR Yaris",
+            "Mitsubishi Lancer EX",
+            "Hyundai Genesis Coupe",
+            "Nissan 370Z",
+            "BMW M4",
+            "Honda S2000",
+            "Toyota GR Supra",
+            "Subaru BRZ",
+            "Ford Focus RS"
+        };
 
         var addresses = new[]
         {
-        "Sorsogon City",
-        "Legazpi City",
-        "Naga City",
-        "Daraga, Albay",
-        "Irosin, Sorsogon",
-        "bulusan, Sorsogon"
-    };
+            "Sorsogon City",
+            "Legazpi City",
+            "Naga City",
+            "Daraga, Albay",
+            "Irosin, Sorsogon",
+            "bulusan, Sorsogon"
+        };
 
         var types = new[]
         {
-        RegistrationType.Exhibitor,
-        RegistrationType.Competitor,
-        RegistrationType.VIP
-    };
+            RegistrationType.Exhibitor,
+            RegistrationType.Competitor,
+            RegistrationType.VIP
+        };
 
         var statuses = new[]
         {
-        RegistrationStatus.Pending,
-        RegistrationStatus.Confirmed,
-        RegistrationStatus.CheckedIn,
-        RegistrationStatus.Cancelled
-    };
+            RegistrationStatus.Pending,
+            RegistrationStatus.Confirmed,
+            RegistrationStatus.CheckedIn,
+            RegistrationStatus.Cancelled
+        };
 
         decimal[] fees = { 1500m, 2500m, 5000m };
 
@@ -166,9 +167,7 @@ public sealed class AppDbContext : DbContext, IAppDbContext
         {
             var typeIndex = i % 3;
             var statusIndex = i % 4;
-
             var fee = fees[typeIndex];
-
             var paymentPattern = i % 3;
 
             var amountPaid = paymentPattern switch
@@ -180,34 +179,18 @@ public sealed class AppDbContext : DbContext, IAppDbContext
 
             registrations.Add(new Registration
             {
-                Id = Guid.Parse(
-                    $"00000000-0000-0000-0000-{i + 1:000000000000}"),
-
+                Id = Guid.Parse($"00000000-0000-0000-0000-{i + 1:000000000000}"),
                 RegistrationNumber = $"CS27-{9000 + i + 1:0000}",
-
-                RegistrationDate = new DateTime(
-                    2026, 11, 1, 8, 0, 0, DateTimeKind.Utc)
-                    .AddDays(i),
-
+                RegistrationDate = new DateTime(2026, 11, 1, 8, 0, 0, DateTimeKind.Utc).AddDays(i),
                 ParticipantName = names[i],
-
                 ContactNumber = $"091700000{i + 1:00}",
-
                 Email = $"participant{i + 1}@example.com",
-
-                Address = addresses[i % addresses.Length]
-                    + ", Philippines",
-
+                Address = addresses[i % addresses.Length],
                 CarMakeModel = cars[i],
-
-                PlateNumber = $"DEMO{i + 1:0000}",
-
+                PlateNumber = $"CS-{1000 + i}",
                 RegistrationType = types[typeIndex],
-
                 Status = statuses[statusIndex],
-
                 RegistrationFee = fee,
-
                 AmountPaid = amountPaid
             });
         }
